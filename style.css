@@ -1,0 +1,409 @@
+/* style.css */
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2f7; /* 淡い青色 */
+    color: #333;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3.0em;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.lead {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.empire-description, .education-problem, .english-learning-column {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.empire-description strong {
+    font-weight: 700;
+    color: #333;
+}
+
+.strong-point {
+    margin-bottom: 40px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.strong-point h2 {
+    font-size: 1.6em;
+    color: #2e7d32;
+    margin-top: 0;
+    margin-bottom: 18px;
+    border-bottom: 3px solid #81c784;
+    padding-bottom: 10px;
+}
+
+.strong-point ol {
+    padding-left: 20px;
+}
+
+.strong-point li {
+    margin-bottom: 12px;
+    font-size: 1.05em;
+}
+
+.strong-point li h3 {
+    font-size: 1.15em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.strong-point li p {
+    margin-bottom: 0;
+}
+
+.service-list {
+    margin-bottom: 40px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.service-list h2 {
+    font-size: 1.6em;
+    color: #f9a825;
+    margin-top: 0;
+    margin-bottom: 18px;
+    border-bottom: 3px solid #ffb74d;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-list h2 .super-cheap {
+    font-size: 0.9em;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.service-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    padding: 10px 0;
+    border-bottom: 1px dotted #eee;
+    font-size: 1.05em;
+}
+
+.service-list li strong {
+    font-weight: 700;
+    color: #333;
+}
+
+.service-list li:last-child {
+    border-bottom: none;
+}
+
+.price {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.price h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #d32f2f;
+    font-size: 2.4em;
+    margin-bottom: 15px;
+}
+
+.price-text {
+    font-size: 1.3em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.cta {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 18px 35px;
+    background-color: #1976d2;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.3em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background-color: #1565c0;
+}
+
+/* 必要に応じて、無料相談ボタンのスタイルを調整 */
+.free-consultation-button {
+    background-color: #28a745; /* 目立つ緑色など */
+    padding: 15px 30px; /* パディングを course-link と同じに */
+    margin-left: 10px; /* 左側のマージンを追加 (必要であれば調整) */
+    text-decoration: none; /* ボタンなので text-decoration を none に */
+    border-radius: 5px; /* course-link と同じ角丸に */
+}
+
+.free-consultation-button:hover {
+    background-color: #1e7e34; /* ホバー時の色 */
+}
+
+/* お客様の声 */
+.customer-voice {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.customer-voice h2 {
+    font-size: 1.6em;
+    color: #795548; /* 茶色 */
+    margin-top: 0;
+    margin-bottom: 18px;
+    border-bottom: 3px solid #a1887f;
+    padding-bottom: 10px;
+}
+
+.voice-item {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+.voice-text {
+    font-size: 1.05em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* よくある質問 */
+.faq {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.faq h2 {
+    font-size: 1.6em;
+    color: #1976d2; /* 青色 */
+    margin-top: 0;
+    margin-bottom: 18px;
+    border-bottom: 3px solid #64b5f6;
+    padding-bottom: 10px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    font-size: 1.15em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.faq-item p {
+    font-size: 1.05em;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* 運営者情報 */
+.founder-info {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.founder-info h2 {
+    font-size: 1.6em;
+    color: #6a1b9a; /* 紫色 */
+    margin-top: 0;
+    margin-bottom: 18px;
+    border-bottom: 3px solid #ab47bc;
+    padding-bottom: 10px;
+}
+
+.founder-profile {
+    display: inline-block;
+    text-align: center;
+}
+
+.founder-profile img {
+    margin-bottom: 15px;
+}
+
+.founder-profile h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.founder-profile p {
+    font-size: 1.05em;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* フッター */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f0f0f0;
+    font-size: 0.9em;
+    color: #777;
+    border-top: 1px solid #ddd;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #777;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* TikTok 情報 */
+.tiktok-info {
+    background-color: #ffeb3b; /* 黄色 */
+    color: #d32f2f; /* 赤色 */
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* 固定ヘッダー */
+.fixed-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px 20px;
+    z-index: 100;
+}
+
+.header-right {
+    text-align: right;
+}
+
+/* コースへのリンク */
+.course-link {
+    background-color: #1976d2;
+    color: white;
+    padding: 15px 30px; /* パディングを調整 */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 0; /* 左側のマージンをリセット */
+}
+
+.course-link:hover {
+    background-color: #1565c0;
+}
+
+/* 必要に応じて、無料相談ボタンのスタイルを調整 */
+.free-consultation-button {
+    background-color: #28a745; /* 目立つ緑色など */
+    padding: 15px 30px; /* パディングを course-link と同じに */
+    margin-left: 10px; /* 左側のマージンを追加 (必要であれば調整) */
+    text-decoration: none; /* ボタンなので text-decoration を none に */
+    border-radius: 5px; /* course-link と同じ角丸に */
+}
+
+.free-consultation-button:hover {
+    background-color: #1e7e34; /* ホバー時の色 */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .service-list h2 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service-list h2 .super-cheap {
+        margin-top: 10px;
+    }
+
+    .header-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .header-right a {
+        margin-top: 5px; /* ボタン同士の間隔を調整 */
+        width: 100%; /* モバイルでボタンを横幅いっぱいに */
+        text-align: center; /* ボタン内のテキストを中央揃え */
+        box-sizing: border-box; /* パディングを含めて幅を計算 */
+    }
+}
