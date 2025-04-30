@@ -37,6 +37,26 @@ h1 {
     margin-bottom: 20px;
 }
 
+.video-container {
+    position: relative; /* 親要素をrelativeに */
+    width: 100%;
+    max-width: 640px; /* 少し大きめの横幅 */
+    margin: 0 auto;
+    padding-bottom: 360px; /* heightを固定 (640 * 9 / 16 = 360) */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 .empire-description, .education-problem, .english-learning-column {
     font-size: 1.1em;
     color: #666;
@@ -136,6 +156,11 @@ h1 {
     border-bottom: none;
 }
 
+.free-trial-button-container {
+    text-align: center; /* ボタンを中央に配置 */
+    margin-top: 20px; /* 上のリストとの間隔 */
+}
+
 .price {
     text-align: center;
     margin-bottom: 40px;
@@ -170,6 +195,7 @@ h1 {
     font-size: 1.3em;
     transition: background-color 0.3s ease;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    margin: 5px; /* ボタン同士の間隔を少し調整 */
 }
 
 .cta-button:hover {
@@ -179,14 +205,47 @@ h1 {
 /* 必要に応じて、無料相談ボタンのスタイルを調整 */
 .free-consultation-button {
     background-color: #28a745; /* 目立つ緑色など */
-    padding: 15px 30px; /* パディングを course-link と同じに */
-    margin-left: 10px; /* 左側のマージンを追加 (必要であれば調整) */
-    text-decoration: none; /* ボタンなので text-decoration を none に */
-    border-radius: 5px; /* course-link と同じ角丸に */
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 .free-consultation-button:hover {
     background-color: #1e7e34; /* ホバー時の色 */
+}
+
+/* 初級編購入ボタンのスタイル */
+.purchase-button {
+    background-color: #ff9800; /* オレンジ色など */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.purchase-button:hover {
+    background-color: #f57c00;
+}
+
+/* 初級編無料体験ボタンのスタイル（目立たせる） */
+.free-trial-button {
+    display: inline-block;
+    padding: 20px 40px; /* 大きくする */
+    background-color: #d4e157; /* より明るい色 */
+    color: #333; /* テキストの色 */
+    text-decoration: none;
+    border-radius: 10px; /* 角を丸くする */
+    font-size: 1.5em; /* フォントサイズを大きく */
+    font-weight: bold; /* 太字にする */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* 影をつける */
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* ホバー時のアニメーション */
+}
+
+.free-trial-button:hover {
+    background-color: #c0ca33; /* ホバー時の色を少し暗く */
+    box-shadow: 0 7px 12px rgba(0, 0, 0, 0.4); /* ホバー時の影を少し強く */
 }
 
 /* お客様の声 */
@@ -280,17 +339,7 @@ h1 {
 
 .founder-profile {
     display: inline-block;
-    text-align: center;
-}
-
-.founder-profile img {
-    margin-bottom: 15px;
-}
-
-.founder-profile h3 {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 8px;
+    text-align: left;
 }
 
 .founder-profile p {
@@ -356,23 +405,84 @@ footer a:hover {
     border-radius: 5px;
     font-weight: bold;
     margin-left: 0; /* 左側のマージンをリセット */
+    margin-right: 10px; /* 右側のマージンを追加 */
 }
 
 .course-link:hover {
     background-color: #1565c0;
 }
 
-/* 必要に応じて、無料相談ボタンのスタイルを調整 */
-.free-consultation-button {
-    background-color: #28a745; /* 目立つ緑色など */
-    padding: 15px 30px; /* パディングを course-link と同じに */
-    margin-left: 10px; /* 左側のマージンを追加 (必要であれば調整) */
-    text-decoration: none; /* ボタンなので text-decoration を none に */
-    border-radius: 5px; /* course-link と同じ角丸に */
+/* 支払い情報セクション */
+.payment-info {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 30px;
+    border: 2px solid #4caf50; /* 緑色の太いボーダー */
+    border-radius: 10px;
+    background-color: #f1f8e9; /* 薄い緑色の背景 */
 }
 
-.free-consultation-button:hover {
-    background-color: #1e7e34; /* ホバー時の色 */
+.payment-info h2 {
+    font-size: 2.0em;
+    color: #4caf50;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.payment-notice {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.bank-details {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left; /* 左寄せで見やすく */
+    display: inline-block;
+}
+
+.bank-details strong {
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.price-regal {
+    font-size: 1.5em;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.important-notice {
+    font-size: 1.2em;
+    color: #f44336; /* 赤色 */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.instagram-account, .mail {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.instagram-account a, .mail a {
+    color: #007bff; /* 青色 */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.instagram-account a:hover, .mail a:hover {
+    text-decoration: underline;
+}
+
+.completion-message {
+    font-size: 1.1em;
+    color: #777;
 }
 
 @media (max-width: 600px) {
@@ -401,9 +511,4 @@ footer a:hover {
     }
 
     .header-right a {
-        margin-top: 5px; /* ボタン同士の間隔を調整 */
-        width: 100%; /* モバイルでボタンを横幅いっぱいに */
-        text-align: center; /* ボタン内のテキストを中央揃え */
-        box-sizing: border-box; /* パディングを含めて幅を計算 */
-    }
-}
+        margin
