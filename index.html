@@ -27,31 +27,15 @@
             text-align: center; /* 中央揃え */
             margin-bottom: 10px; /* 下の余白 */
         }
-        /* ヘッダー部分のスタイル */
-        header {
-            background-color: #f8f8f8; /* 明るい背景色 */
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom: 1px solid #eee;
-        }
-
-        header h1 {
+        /* かっこよくするスタイル (h1タグのみに適用) */
+        h1 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            font-size: 3.5em; /* さらに大きく */
-            color: #2c3e50; /* 少し濃いめの色 */
-            margin-bottom: 15px;
-            line-height: 1.1;
-            letter-spacing: 0.05em; /* 字間を少し広げる */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* 影をつける */
-        }
-
-        header .lead {
-            font-size: 1.2em;
-            color: #555;
-            line-height: 1.6;
-            margin-bottom: 20px;
-            padding: 0 5%; /* 左右に少し余白 */
+            font-size: 3.0em;
+            color: #333;
+            margin-bottom: 10px;
+            line-height: 1.2;
+            text-align: center; /* 中央揃え */
         }
 
         .column-title {
@@ -75,111 +59,6 @@
             margin-top: 0;
             margin-bottom: 10px;
             padding-bottom: 5px;
-        }
-
-        .payment-info {
-            margin-top: 40px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-            text-align: center;
-        }
-
-        .payment-info h2 {
-            color: #d32f2f;
-            margin-bottom: 15px;
-        }
-
-        .payment-notice {
-            color: #777;
-            margin-bottom: 10px;
-        }
-
-        .bank-details {
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .price-regal {
-            font-size: 1.5em;
-            color: #2e7d32;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        .important-notice {
-            color: #ff9800;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        .instagram-account, .mail {
-            margin-bottom: 10px;
-        }
-
-        .completion-message {
-            color: #555;
-            font-size: 0.9em;
-        }
-
-        .founder-info {
-            margin-top: 40px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-
-        .founder-info h2 {
-            color: #1976d2;
-            margin-bottom: 15px;
-        }
-
-        .founder-profile {
-            line-height: 1.6;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            padding: 20px 0;
-            background-color: #f0f0f0;
-            font-size: 0.9em;
-            color: #777;
-        }
-
-        .footer-links a {
-            color: #777;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-
-        .colored-title {
-            font-size: 1.6em;
-            margin-top: 0;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-        }
-
-        .empire-title {
-            color: #2e7d32;
-            border-bottom: 3px solid #81c784;
-        }
-
-        .learning-title {
-            color: #1976d2;
-            border-bottom: 3px solid #64b5f6;
-            font-size: 1.6em;
-        }
-
-        .problem-title {
-            color: #f9a825;
-            border-bottom: 3px solid #ffb74d;
         }
     </style>
 </head>
@@ -205,10 +84,10 @@
                 <p style="text-align: center; margin-bottom: 10px;">まずはこの動画をご覧ください！</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/v9qSQqmL6Wg?si=e433A2XQJm-p8qXD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <div class="empire-description">
-                <h2 class="colored-title empire-title">英語の館とは？</h2>
+            <section class="empire-description">
+                <h2 class="column-title">英語の館とは？</h2>
                 私(生涯受験生）自身が『<strong>TOEFLの点数を約7カ月で50台から99まで上げ、その後言語学的な観点から英語を研究してきた経験と知恵</strong>』を元に作った、『日本人が“最短で”英語力を上げるために必要な要素を網羅した独自のカリキュラム』です。<br>初級・中級・上級に分かれており、英語習得に必要な要素を一歩ずつ学べるようになっております。『何からやればいいかわからない』と悩む必要なく、目の前のことを愚直にこなしていくことで、確実に高い英語力を身に付けることができます🔥
-            </div>
+            </section>
         </header>
 
         <section class="english-learning-column">
