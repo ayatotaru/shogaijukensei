@@ -60,6 +60,30 @@
             margin-bottom: 10px;
             padding-bottom: 5px;
         }
+        .hero-column {
+        background-color: #e0f7fa; /* 薄い水色 */
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+        text-align: center; /* 必要に応じて中央揃え */
+    }
+
+    .hero-column h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 3.5em; /* 少し大きく */
+        color: #00897b; /* 濃いめの青緑 */
+        margin-bottom: 15px;
+        line-height: 1.1;
+    }
+
+    .hero-column .lead {
+        font-size: 1.2em;
+        color: #555;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
     </style>
 </head>
 <body>
@@ -78,16 +102,18 @@
             </div>
         </div>
         <header>
-            <h1>英語の館</h1>
-            <p class="lead">“英語を上達させたいけど、何をやればいいか分からない”という悩みを無くすべく、『<strong>英語力０から英語が話せる・資格試験を狙えるまでのロードマップ</strong>』を作りました。</p>
+            <section class="hero-column">
+                <h1>英語の館</h1>
+                <p class="lead">“英語を上達させたいけど、何をやればいいか分からない”という悩みを無くすべく、『<strong>英語力０から英語が話せる・資格試験を狙えるまでのロードマップ</strong>』を作りました。</p>
+            </section>
             <div class="video-container">
                 <p style="text-align: center; margin-bottom: 10px;">まずはこの動画をご覧ください！</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/v9qSQqmL6Wg?si=e433A2XQJm-p8qXD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <section class="empire-description">
+            <div class="empire-description">
                 <h2 class="column-title">英語の館とは？</h2>
                 私(生涯受験生）自身が『<strong>TOEFLの点数を約7カ月で50台から99まで上げ、その後言語学的な観点から英語を研究してきた経験と知恵</strong>』を元に作った、『日本人が“最短で”英語力を上げるために必要な要素を網羅した独自のカリキュラム』です。<br>初級・中級・上級に分かれており、英語習得に必要な要素を一歩ずつ学べるようになっております。『何からやればいいかわからない』と悩む必要なく、目の前のことを愚直にこなしていくことで、確実に高い英語力を身に付けることができます🔥
-            </section>
+            </div>
         </header>
 
         <section class="english-learning-column">
