@@ -27,15 +27,31 @@
             text-align: center; /* 中央揃え */
             margin-bottom: 10px; /* 下の余白 */
         }
-        /* かっこよくするスタイル (h1タグのみに適用) */
-        h1 {
+        /* ヘッダー部分のスタイル */
+        header {
+            background-color: #f8f8f8; /* 明るい背景色 */
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        header h1 {
             font-family: 'Montserrat', sans-serif;
             font-weight: 700;
-            font-size: 3.0em;
-            color: #333;
-            margin-bottom: 10px;
-            line-height: 1.2;
-            text-align: center; /* 中央揃え */
+            font-size: 3.5em; /* さらに大きく */
+            color: #2c3e50; /* 少し濃いめの色 */
+            margin-bottom: 15px;
+            line-height: 1.1;
+            letter-spacing: 0.05em; /* 字間を少し広げる */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* 影をつける */
+        }
+
+        header .lead {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            padding: 0 5%; /* 左右に少し余白 */
         }
 
         .column-title {
@@ -55,7 +71,7 @@
         .english-learning-column h3 {
             color: #1976d2; /* faqのh2の色 */
             border-bottom: 3px solid #64b5f6; /* faqのh2の線 */
-            font-size: 1.4em; /* 少し小さく */
+            font-size: 1.6em;
             margin-top: 0;
             margin-bottom: 10px;
             padding-bottom: 5px;
@@ -158,7 +174,7 @@
         .learning-title {
             color: #1976d2;
             border-bottom: 3px solid #64b5f6;
-            font-size: 1.4em; /* 以前のenglish-learning-column h3と同じサイズ */
+            font-size: 1.6em;
         }
 
         .problem-title {
