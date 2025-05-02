@@ -61,28 +61,29 @@
             padding-bottom: 5px;
         }
         .hero-column {
-        background-color: #e0f7fa; /* 薄い水色 */
-        padding: 30px;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        margin-bottom: 30px;
+        padding: 0; /* パディングを削除 */
+        background-color: transparent; /* 背景を透明に */
+        border-radius: 0; /* 角丸を削除 */
+        box-shadow: none; /* 影を削除 */
+        margin-bottom: 10px; /* 元々のh1の下マージンに近い値 */
         text-align: center; /* 必要に応じて中央揃え */
     }
 
     .hero-column h1 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 700;
-        font-size: 3.5em; /* 少し大きく */
-        color: #00897b; /* 濃いめの青緑 */
-        margin-bottom: 15px;
-        line-height: 1.1;
+        font-size: 3.0em; /* 元々のh1のサイズ */
+        color: #00897b; /* 青緑の文字色を適用 */
+        margin-bottom: 10px; /* 元々のh1の下マージン */
+        line-height: 1.2;
+        text-align: center; /* 元々のh1の中央揃え */
     }
 
     .hero-column .lead {
-        font-size: 1.2em;
-        color: #555;
+        font-size: 1.0em; /* 元々のleadのサイズに近い値 */
+        color: #555; /* 元々のleadの色 */
         line-height: 1.6;
-        margin-bottom: 20px;
+        margin-bottom: 20px; /* 元々のleadの下マージン */
     }
     </style>
 </head>
